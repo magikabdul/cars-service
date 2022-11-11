@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>car</th>
+        <th>plate</th>
+        <th>delivery data</th>
+        <th>deadline</th>
+        <th>client</th>
+        <th>cost</th>
+        <th>action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let car of cars; let id = index">
+        <td>{{car.model}}</td>
+        <td>{{car.plate}}</td>
+        <td>{{car.deliveryData}}</td>
+        <td>{{car.deadline}}</td>
+        <td>{{car.client.firstName}} {{car.client.lastName}}</td>
+        <td>{{car.cost}}</td>
+        <td>ACTION PLACE HOLDER</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
